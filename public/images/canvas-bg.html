@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<!-- Created with Ai->Canvas Export Plug-In Version 1.2 (Mac)   -->
+<!-- By Mike Swanson (http://blog.mikeswanson.com/)             -->
+
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>canvas-bg</title>
+  <script>
+
+    function init() {
+
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+
+      draw(ctx);
+    }
+
+    function draw(ctx) {
+
+      var alpha = ctx.globalAlpha;
+      var gradient;
+
+      // layer2/Path
+      ctx.save();
+      ctx.beginPath();
+      ctx.moveTo(1024.0, 768.0);
+      ctx.lineTo(0.0, 768.0);
+      ctx.lineTo(0.0, 0.0);
+      ctx.lineTo(1024.0, 0.0);
+      ctx.lineTo(1024.0, 768.0);
+      ctx.closePath();
+      gradient = ctx.createLinearGradient(512.0, 768.0, 512.0, 0.0);
+      gradient.addColorStop(0.00, "rgb(100, 44, 143)");
+      gradient.addColorStop(1.00, "rgb(37, 33, 96)");
+      ctx.fillStyle = gradient;
+      ctx.fill();
+      ctx.restore();
+
+      // layer1/Compound Path
+      ctx.save();
+      ctx.globalAlpha = alpha * 0.40;
+      ctx.beginPath();
+
+      // layer1/Compound Path/Path
+      ctx.moveTo(209.8, 424.6);
+      ctx.bezierCurveTo(206.7, 427.5, 204.7, 431.4, 204.7, 435.9);
+      ctx.bezierCurveTo(204.5, 445.0, 212.1, 452.5, 221.7, 452.7);
+      ctx.bezierCurveTo(224.0, 452.7, 226.2, 452.3, 228.2, 451.6);
+      ctx.bezierCurveTo(228.5, 466.1, 240.9, 478.0, 256.4, 478.3);
+      ctx.bezierCurveTo(267.5, 478.6, 277.2, 472.8, 282.2, 464.1);
+      ctx.bezierCurveTo(284.9, 465.9, 288.2, 467.0, 291.7, 467.1);
+      ctx.bezierCurveTo(301.3, 467.3, 309.2, 460.1, 309.4, 451.0);
+      ctx.bezierCurveTo(309.4, 449.9, 309.3, 448.8, 309.1, 447.7);
+      ctx.bezierCurveTo(311.5, 448.9, 314.1, 449.5, 316.9, 449.6);
+      ctx.bezierCurveTo(326.4, 449.8, 334.4, 442.6, 334.5, 433.5);
+      ctx.bezierCurveTo(334.7, 425.3, 328.4, 418.4, 320.1, 417.0);
+      ctx.bezierCurveTo(327.7, 413.7, 333.0, 406.6, 333.2, 398.2);
+      ctx.bezierCurveTo(333.4, 386.5, 323.6, 376.8, 311.2, 376.6);
+      ctx.bezierCurveTo(310.3, 376.5, 309.4, 376.6, 308.5, 376.7);
+      ctx.bezierCurveTo(309.3, 374.3, 309.7, 371.9, 309.8, 369.3);
+      ctx.bezierCurveTo(310.0, 354.4, 297.5, 342.0, 281.6, 341.6);
+      ctx.bezierCurveTo(270.1, 341.4, 260.0, 347.7, 255.3, 356.9);
+      ctx.bezierCurveTo(252.3, 352.1, 246.9, 348.9, 240.6, 348.7);
+      ctx.bezierCurveTo(231.0, 348.5, 223.1, 355.7, 222.9, 364.8);
+      ctx.bezierCurveTo(222.9, 367.5, 223.5, 370.0, 224.7, 372.3);
+      ctx.bezierCurveTo(222.6, 371.8, 220.5, 371.5, 218.2, 371.4);
+      ctx.bezierCurveTo(202.4, 371.1, 189.4, 383.0, 189.1, 398.0);
+      ctx.bezierCurveTo(188.8, 410.5, 197.6, 421.2, 209.8, 424.6);
+      ctx.closePath();
+      ctx.fillStyle = "rgb(37, 33, 96)";
+      ctx.fill();
+
+      // layer1/Path
+      ctx.beginPath();
+      ctx.moveTo(333.7, 458.7);
+      ctx.bezierCurveTo(327.5, 445.8, 314.4, 436.9, 299.2, 436.9);
+      ctx.bezierCurveTo(294.7, 436.9, 290.4, 437.7, 286.4, 439.1);
+      ctx.bezierCurveTo(283.7, 426.6, 272.5, 417.2, 259.2, 417.2);
+      ctx.bezierCurveTo(256.4, 417.2, 253.7, 417.7, 251.1, 418.4);
+      ctx.bezierCurveTo(242.3, 403.5, 226.0, 393.4, 207.4, 393.4);
+      ctx.bezierCurveTo(188.9, 393.4, 172.6, 403.4, 163.8, 418.3);
+      ctx.bezierCurveTo(157.2, 415.2, 149.9, 413.4, 142.2, 413.4);
+      ctx.bezierCurveTo(123.7, 413.4, 107.6, 423.3, 98.7, 438.1);
+      ctx.bezierCurveTo(95.9, 436.7, 92.8, 435.9, 89.4, 435.9);
+      ctx.bezierCurveTo(78.0, 435.9, 68.7, 445.1, 68.7, 456.6);
+      ctx.bezierCurveTo(68.7, 458.4, 69.0, 460.2, 69.4, 461.9);
+      ctx.bezierCurveTo(68.4, 461.8, 67.4, 461.7, 66.3, 461.7);
+      ctx.bezierCurveTo(50.3, 461.7, 37.3, 474.7, 37.3, 490.7);
+      ctx.bezierCurveTo(37.3, 506.7, 50.3, 519.7, 66.3, 519.7);
+      ctx.bezierCurveTo(71.1, 519.7, 75.7, 518.5, 79.7, 516.4);
+      ctx.bezierCurveTo(86.5, 536.4, 105.4, 550.8, 127.7, 550.8);
+      ctx.bezierCurveTo(137.7, 550.8, 147.0, 547.8, 154.9, 542.8);
+      ctx.bezierCurveTo(164.2, 553.6, 177.9, 560.4, 193.3, 560.4);
+      ctx.bezierCurveTo(214.4, 560.4, 232.5, 547.5, 240.1, 529.1);
+      ctx.bezierCurveTo(245.1, 536.5, 253.6, 541.4, 263.3, 541.4);
+      ctx.bezierCurveTo(278.7, 541.4, 291.2, 528.9, 291.2, 513.5);
+      ctx.bezierCurveTo(291.2, 513.2, 291.2, 512.9, 291.2, 512.6);
+      ctx.bezierCurveTo(293.8, 513.2, 296.4, 513.5, 299.2, 513.5);
+      ctx.bezierCurveTo(311.0, 513.5, 321.6, 508.1, 328.6, 499.7);
+      ctx.bezierCurveTo(329.8, 499.9, 331.0, 500.0, 332.3, 500.0);
+      ctx.bezierCurveTo(343.7, 500.0, 353.0, 490.8, 353.0, 479.3);
+      ctx.bezierCurveTo(353.0, 468.4, 344.5, 459.4, 333.7, 458.7);
+      ctx.closePath();
+      ctx.fill("evenodd");
+
+      // layer1/Path
+      ctx.beginPath();
+      ctx.moveTo(437.9, 470.0);
+      ctx.bezierCurveTo(432.8, 459.4, 422.1, 452.1, 409.6, 452.1);
+      ctx.bezierCurveTo(405.9, 452.1, 402.4, 452.8, 399.1, 453.9);
+      ctx.bezierCurveTo(396.9, 443.7, 387.7, 436.0, 376.8, 436.0);
+      ctx.bezierCurveTo(374.5, 436.0, 372.3, 436.3, 370.2, 437.0);
+      ctx.bezierCurveTo(363.0, 424.7, 349.7, 416.5, 334.4, 416.5);
+      ctx.bezierCurveTo(319.2, 416.5, 306.0, 424.7, 298.7, 436.8);
+      ctx.bezierCurveTo(293.4, 434.3, 287.4, 432.9, 281.0, 432.9);
+      ctx.bezierCurveTo(265.9, 432.9, 252.7, 441.0, 245.4, 453.1);
+      ctx.bezierCurveTo(243.1, 451.9, 240.6, 451.3, 237.8, 451.3);
+      ctx.bezierCurveTo(228.5, 451.3, 220.9, 458.8, 220.9, 468.2);
+      ctx.bezierCurveTo(220.9, 469.7, 221.1, 471.2, 221.5, 472.6);
+      ctx.bezierCurveTo(220.6, 472.5, 219.8, 472.4, 218.9, 472.4);
+      ctx.bezierCurveTo(205.8, 472.4, 195.2, 483.1, 195.2, 496.2);
+      ctx.bezierCurveTo(195.2, 509.3, 205.8, 519.9, 218.9, 519.9);
+      ctx.bezierCurveTo(222.9, 519.9, 226.6, 518.9, 229.9, 517.2);
+      ctx.bezierCurveTo(235.4, 533.6, 250.9, 545.3, 269.2, 545.3);
+      ctx.bezierCurveTo(277.4, 545.3, 285.0, 542.9, 291.4, 538.9);
+      ctx.bezierCurveTo(299.1, 547.7, 310.3, 553.2, 322.9, 553.2);
+      ctx.bezierCurveTo(340.2, 553.2, 355.0, 542.7, 361.2, 527.6);
+      ctx.bezierCurveTo(365.3, 533.7, 372.3, 537.7, 380.2, 537.7);
+      ctx.bezierCurveTo(392.8, 537.7, 403.1, 527.5, 403.1, 514.8);
+      ctx.bezierCurveTo(403.1, 514.6, 403.1, 514.4, 403.1, 514.1);
+      ctx.bezierCurveTo(405.2, 514.6, 407.3, 514.8, 409.6, 514.8);
+      ctx.bezierCurveTo(419.3, 514.8, 427.9, 510.4, 433.7, 503.5);
+      ctx.bezierCurveTo(434.7, 503.7, 435.7, 503.8, 436.7, 503.8);
+      ctx.bezierCurveTo(446.1, 503.8, 453.7, 496.2, 453.7, 486.8);
+      ctx.bezierCurveTo(453.7, 477.9, 446.7, 470.5, 437.9, 470.0);
+      ctx.closePath();
+      ctx.fill("evenodd");
+
+      // layer1/Compound Path
+      ctx.beginPath();
+
+      // layer1/Compound Path/Path
+      ctx.moveTo(893.2, 291.5);
+      ctx.bezierCurveTo(893.0, 282.0, 884.7, 274.5, 874.7, 274.7);
+      ctx.bezierCurveTo(873.3, 274.7, 871.9, 274.9, 870.6, 275.2);
+      ctx.bezierCurveTo(871.3, 273.8, 871.7, 272.2, 871.7, 270.5);
+      ctx.bezierCurveTo(871.6, 264.7, 866.6, 260.2, 860.5, 260.3);
+      ctx.bezierCurveTo(856.5, 260.4, 853.0, 262.5, 851.2, 265.5);
+      ctx.bezierCurveTo(848.2, 259.6, 841.8, 255.6, 834.4, 255.8);
+      ctx.bezierCurveTo(824.4, 256.0, 816.4, 263.9, 816.6, 273.4);
+      ctx.bezierCurveTo(816.6, 275.0, 816.9, 276.6, 817.3, 278.0);
+      ctx.bezierCurveTo(816.8, 278.0, 816.2, 277.9, 815.6, 278.0);
+      ctx.bezierCurveTo(807.8, 278.1, 801.5, 284.3, 801.7, 291.7);
+      ctx.bezierCurveTo(801.8, 297.0, 805.2, 301.6, 810.0, 303.6);
+      ctx.bezierCurveTo(804.7, 304.5, 800.7, 308.9, 800.8, 314.1);
+      ctx.bezierCurveTo(800.9, 319.9, 806.0, 324.5, 812.1, 324.3);
+      ctx.bezierCurveTo(813.8, 324.3, 815.5, 323.9, 817.0, 323.1);
+      ctx.bezierCurveTo(816.8, 323.8, 816.8, 324.5, 816.8, 325.2);
+      ctx.bezierCurveTo(816.9, 331.0, 821.9, 335.6, 828.0, 335.4);
+      ctx.bezierCurveTo(830.3, 335.4, 832.4, 334.7, 834.1, 333.5);
+      ctx.bezierCurveTo(837.2, 339.1, 843.4, 342.7, 850.5, 342.6);
+      ctx.bezierCurveTo(860.3, 342.4, 868.2, 334.8, 868.3, 325.6);
+      ctx.bezierCurveTo(869.6, 326.1, 871.0, 326.3, 872.5, 326.3);
+      ctx.bezierCurveTo(878.6, 326.2, 883.4, 321.4, 883.3, 315.6);
+      ctx.bezierCurveTo(883.2, 312.8, 882.0, 310.3, 880.1, 308.4);
+      ctx.bezierCurveTo(887.8, 306.3, 893.3, 299.5, 893.2, 291.5);
+      ctx.closePath();
+      ctx.fill();
+
+      // layer1/Path
+      ctx.beginPath();
+      ctx.moveTo(801.4, 330.1);
+      ctx.bezierCurveTo(805.3, 321.9, 813.6, 316.3, 823.3, 316.3);
+      ctx.bezierCurveTo(826.1, 316.3, 828.8, 316.8, 831.4, 317.7);
+      ctx.bezierCurveTo(833.1, 309.7, 840.2, 303.8, 848.7, 303.8);
+      ctx.bezierCurveTo(850.5, 303.8, 852.2, 304.1, 853.8, 304.5);
+      ctx.bezierCurveTo(859.4, 295.0, 869.7, 288.7, 881.5, 288.7);
+      ctx.bezierCurveTo(893.3, 288.7, 903.6, 295.0, 909.2, 304.4);
+      ctx.bezierCurveTo(913.4, 302.5, 918.0, 301.4, 923.0, 301.4);
+      ctx.bezierCurveTo(934.7, 301.4, 944.9, 307.7, 950.6, 317.0);
+      ctx.bezierCurveTo(952.3, 316.1, 954.3, 315.6, 956.5, 315.6);
+      ctx.bezierCurveTo(963.7, 315.6, 969.6, 321.5, 969.6, 328.8);
+      ctx.bezierCurveTo(969.6, 329.9, 969.4, 331.1, 969.1, 332.2);
+      ctx.bezierCurveTo(969.8, 332.1, 970.5, 332.0, 971.1, 332.0);
+      ctx.bezierCurveTo(981.3, 332.0, 989.5, 340.3, 989.5, 350.4);
+      ctx.bezierCurveTo(989.5, 360.6, 981.3, 368.8, 971.1, 368.8);
+      ctx.bezierCurveTo(968.1, 368.8, 965.2, 368.1, 962.6, 366.7);
+      ctx.bezierCurveTo(958.3, 379.4, 946.3, 388.6, 932.1, 388.6);
+      ctx.bezierCurveTo(925.8, 388.6, 919.9, 386.7, 914.9, 383.5);
+      ctx.bezierCurveTo(909.0, 390.4, 900.3, 394.7, 890.5, 394.7);
+      ctx.bezierCurveTo(877.1, 394.7, 865.6, 386.5, 860.8, 374.8);
+      ctx.bezierCurveTo(857.6, 379.5, 852.2, 382.6, 846.1, 382.6);
+      ctx.bezierCurveTo(836.3, 382.6, 828.3, 374.7, 828.3, 364.9);
+      ctx.bezierCurveTo(828.3, 364.7, 828.3, 364.5, 828.3, 364.4);
+      ctx.bezierCurveTo(826.7, 364.7, 825.0, 364.9, 823.3, 364.9);
+      ctx.bezierCurveTo(815.8, 364.9, 809.1, 361.5, 804.6, 356.1);
+      ctx.bezierCurveTo(803.8, 356.3, 803.1, 356.4, 802.3, 356.4);
+      ctx.bezierCurveTo(795.0, 356.4, 789.1, 350.5, 789.1, 343.2);
+      ctx.bezierCurveTo(789.1, 336.3, 794.5, 330.6, 801.4, 330.1);
+      ctx.closePath();
+      ctx.fill("evenodd");
+
+      // layer1/Path
+      ctx.beginPath();
+      ctx.moveTo(544.3, 590.5);
+      ctx.bezierCurveTo(553.7, 570.7, 573.8, 557.1, 597.2, 557.1);
+      ctx.bezierCurveTo(604.1, 557.1, 610.6, 558.3, 616.7, 560.5);
+      ctx.bezierCurveTo(621.0, 541.3, 638.1, 526.9, 658.6, 526.9);
+      ctx.bezierCurveTo(662.8, 526.9, 667.0, 527.6, 670.9, 528.7);
+      ctx.bezierCurveTo(684.4, 505.8, 709.4, 490.4, 737.9, 490.4);
+      ctx.bezierCurveTo(766.3, 490.4, 791.2, 505.7, 804.8, 528.5);
+      ctx.bezierCurveTo(814.8, 523.8, 826.0, 521.1, 837.9, 521.1);
+      ctx.bezierCurveTo(866.2, 521.1, 891.0, 536.2, 904.6, 558.9);
+      ctx.bezierCurveTo(908.9, 556.7, 913.7, 555.5, 918.8, 555.5);
+      ctx.bezierCurveTo(936.3, 555.5, 950.5, 569.7, 950.5, 587.2);
+      ctx.bezierCurveTo(950.5, 590.1, 950.1, 592.8, 949.4, 595.4);
+      ctx.bezierCurveTo(951.0, 595.2, 952.6, 595.1, 954.2, 595.1);
+      ctx.bezierCurveTo(978.8, 595.1, 998.7, 615.0, 998.7, 639.6);
+      ctx.bezierCurveTo(998.7, 664.1, 978.8, 684.0, 954.2, 684.0);
+      ctx.bezierCurveTo(946.8, 684.0, 939.8, 682.2, 933.7, 679.0);
+      ctx.bezierCurveTo(923.2, 709.6, 894.3, 731.6, 860.1, 731.6);
+      ctx.bezierCurveTo(844.8, 731.6, 830.5, 727.2, 818.4, 719.5);
+      ctx.bezierCurveTo(804.2, 736.0, 783.1, 746.4, 759.6, 746.4);
+      ctx.bezierCurveTo(727.2, 746.4, 699.4, 726.6, 687.7, 698.4);
+      ctx.bezierCurveTo(680.0, 709.8, 667.0, 717.3, 652.2, 717.3);
+      ctx.bezierCurveTo(628.5, 717.3, 609.4, 698.2, 609.4, 674.5);
+      ctx.bezierCurveTo(609.4, 674.1, 609.4, 673.6, 609.4, 673.2);
+      ctx.bezierCurveTo(605.5, 674.0, 601.4, 674.5, 597.2, 674.5);
+      ctx.bezierCurveTo(579.1, 674.5, 562.8, 666.3, 552.1, 653.3);
+      ctx.bezierCurveTo(550.2, 653.7, 548.3, 653.9, 546.4, 653.9);
+      ctx.bezierCurveTo(528.9, 653.9, 514.7, 639.7, 514.7, 622.1);
+      ctx.bezierCurveTo(514.7, 605.3, 527.7, 591.6, 544.3, 590.5);
+      ctx.closePath();
+      ctx.fill("evenodd");
+
+      // layer1/Path
+      ctx.beginPath();
+      ctx.moveTo(735.2, 337.3);
+      ctx.bezierCurveTo(738.4, 330.6, 745.3, 325.9, 753.2, 325.9);
+      ctx.bezierCurveTo(755.5, 325.9, 757.7, 326.3, 759.8, 327.1);
+      ctx.bezierCurveTo(761.3, 320.6, 767.0, 315.7, 774.0, 315.7);
+      ctx.bezierCurveTo(775.4, 315.7, 776.8, 315.9, 778.2, 316.3);
+      ctx.bezierCurveTo(782.8, 308.5, 791.2, 303.3, 800.9, 303.3);
+      ctx.bezierCurveTo(810.5, 303.3, 819.0, 308.5, 823.6, 316.2);
+      ctx.bezierCurveTo(827.0, 314.6, 830.8, 313.7, 834.8, 313.7);
+      ctx.bezierCurveTo(844.4, 313.7, 852.8, 318.9, 857.4, 326.5);
+      ctx.bezierCurveTo(858.9, 325.8, 860.5, 325.4, 862.2, 325.4);
+      ctx.bezierCurveTo(868.2, 325.4, 873.0, 330.2, 873.0, 336.1);
+      ctx.bezierCurveTo(873.0, 337.1, 872.9, 338.0, 872.6, 338.9);
+      ctx.bezierCurveTo(873.2, 338.9, 873.7, 338.8, 874.3, 338.8);
+      ctx.bezierCurveTo(882.6, 338.8, 889.3, 345.6, 889.3, 353.9);
+      ctx.bezierCurveTo(889.3, 362.2, 882.6, 369.0, 874.3, 369.0);
+      ctx.bezierCurveTo(871.7, 369.0, 869.4, 368.3, 867.3, 367.3);
+      ctx.bezierCurveTo(863.7, 377.6, 853.9, 385.1, 842.3, 385.1);
+      ctx.bezierCurveTo(837.1, 385.1, 832.3, 383.6, 828.2, 381.0);
+      ctx.bezierCurveTo(823.4, 386.6, 816.2, 390.1, 808.2, 390.1);
+      ctx.bezierCurveTo(797.3, 390.1, 787.9, 383.4, 783.9, 373.9);
+      ctx.bezierCurveTo(781.3, 377.7, 776.9, 380.3, 771.8, 380.3);
+      ctx.bezierCurveTo(763.8, 380.3, 757.3, 373.8, 757.3, 365.7);
+      ctx.bezierCurveTo(757.3, 365.6, 757.3, 365.5, 757.3, 365.3);
+      ctx.bezierCurveTo(756.0, 365.6, 754.6, 365.7, 753.2, 365.7);
+      ctx.bezierCurveTo(747.0, 365.7, 741.5, 363.0, 737.9, 358.6);
+      ctx.bezierCurveTo(737.3, 358.7, 736.6, 358.7, 736.0, 358.7);
+      ctx.bezierCurveTo(730.0, 358.7, 725.2, 353.9, 725.2, 348.0);
+      ctx.bezierCurveTo(725.2, 342.3, 729.6, 337.6, 735.2, 337.3);
+      ctx.closePath();
+      ctx.fill("evenodd");
+
+      // layer1/Compound Path
+      ctx.beginPath();
+
+      // layer1/Compound Path/Path
+      ctx.moveTo(313.1, 138.3);
+      ctx.bezierCurveTo(313.0, 131.3, 306.9, 125.7, 299.5, 125.8);
+      ctx.bezierCurveTo(298.4, 125.9, 297.4, 126.0, 296.4, 126.2);
+      ctx.bezierCurveTo(297.0, 125.2, 297.3, 124.0, 297.3, 122.7);
+      ctx.bezierCurveTo(297.2, 118.5, 293.5, 115.1, 289.0, 115.2);
+      ctx.bezierCurveTo(286.0, 115.3, 283.5, 116.8, 282.1, 119.0);
+      ctx.bezierCurveTo(279.9, 114.7, 275.2, 111.7, 269.7, 111.9);
+      ctx.bezierCurveTo(262.3, 112.0, 256.4, 117.8, 256.5, 124.9);
+      ctx.bezierCurveTo(256.6, 126.1, 256.8, 127.2, 257.1, 128.3);
+      ctx.bezierCurveTo(256.7, 128.3, 256.3, 128.2, 255.9, 128.2);
+      ctx.bezierCurveTo(250.1, 128.4, 245.5, 132.9, 245.6, 138.4);
+      ctx.bezierCurveTo(245.6, 142.3, 248.1, 145.7, 251.7, 147.2);
+      ctx.bezierCurveTo(247.8, 147.9, 244.8, 151.1, 244.9, 155.0);
+      ctx.bezierCurveTo(245.0, 159.2, 248.7, 162.6, 253.2, 162.5);
+      ctx.bezierCurveTo(254.5, 162.5, 255.7, 162.1, 256.8, 161.6);
+      ctx.bezierCurveTo(256.7, 162.1, 256.7, 162.6, 256.7, 163.2);
+      ctx.bezierCurveTo(256.8, 167.4, 260.5, 170.8, 265.0, 170.7);
+      ctx.bezierCurveTo(266.7, 170.7, 268.2, 170.1, 269.5, 169.3);
+      ctx.bezierCurveTo(271.8, 173.4, 276.4, 176.1, 281.6, 176.0);
+      ctx.bezierCurveTo(288.8, 175.8, 294.7, 170.2, 294.8, 163.4);
+      ctx.bezierCurveTo(295.7, 163.8, 296.8, 164.0, 297.8, 163.9);
+      ctx.bezierCurveTo(302.3, 163.8, 305.9, 160.3, 305.8, 156.1);
+      ctx.bezierCurveTo(305.8, 154.0, 304.9, 152.1, 303.4, 150.8);
+      ctx.bezierCurveTo(309.1, 149.2, 313.2, 144.2, 313.1, 138.3);
+      ctx.closePath();
+      ctx.fill();
+
+      // layer1/Path
+      ctx.beginPath();
+      ctx.moveTo(245.3, 166.8);
+      ctx.bezierCurveTo(248.2, 160.7, 254.4, 156.5, 261.5, 156.5);
+      ctx.bezierCurveTo(263.6, 156.5, 265.6, 156.9, 267.5, 157.6);
+      ctx.bezierCurveTo(268.8, 151.7, 274.0, 147.3, 280.3, 147.3);
+      ctx.bezierCurveTo(281.6, 147.3, 282.8, 147.5, 284.0, 147.9);
+      ctx.bezierCurveTo(288.2, 140.9, 295.8, 136.2, 304.5, 136.2);
+      ctx.bezierCurveTo(313.2, 136.2, 320.8, 140.8, 325.0, 147.8);
+      ctx.bezierCurveTo(328.1, 146.4, 331.5, 145.5, 335.1, 145.5);
+      ctx.bezierCurveTo(343.8, 145.5, 351.4, 150.2, 355.5, 157.1);
+      ctx.bezierCurveTo(356.8, 156.4, 358.3, 156.1, 359.9, 156.1);
+      ctx.bezierCurveTo(365.2, 156.1, 369.6, 160.4, 369.6, 165.8);
+      ctx.bezierCurveTo(369.6, 166.6, 369.5, 167.5, 369.2, 168.3);
+      ctx.bezierCurveTo(369.7, 168.2, 370.2, 168.2, 370.7, 168.2);
+      ctx.bezierCurveTo(378.2, 168.2, 384.3, 174.3, 384.3, 181.8);
+      ctx.bezierCurveTo(384.3, 189.3, 378.2, 195.4, 370.7, 195.4);
+      ctx.bezierCurveTo(368.4, 195.4, 366.3, 194.8, 364.4, 193.8);
+      ctx.bezierCurveTo(361.2, 203.2, 352.4, 209.9, 341.9, 209.9);
+      ctx.bezierCurveTo(337.2, 209.9, 332.8, 208.6, 329.2, 206.2);
+      ctx.bezierCurveTo(324.8, 211.3, 318.4, 214.5, 311.2, 214.5);
+      ctx.bezierCurveTo(301.3, 214.5, 292.8, 208.4, 289.2, 199.8);
+      ctx.bezierCurveTo(286.8, 203.3, 282.9, 205.6, 278.3, 205.6);
+      ctx.bezierCurveTo(271.1, 205.6, 265.2, 199.7, 265.2, 192.5);
+      ctx.bezierCurveTo(265.2, 192.3, 265.2, 192.2, 265.2, 192.1);
+      ctx.bezierCurveTo(264.0, 192.3, 262.8, 192.5, 261.5, 192.5);
+      ctx.bezierCurveTo(256.0, 192.5, 251.0, 189.9, 247.7, 186.0);
+      ctx.bezierCurveTo(247.1, 186.1, 246.6, 186.1, 246.0, 186.1);
+      ctx.bezierCurveTo(240.6, 186.1, 236.3, 181.8, 236.3, 176.4);
+      ctx.bezierCurveTo(236.3, 171.3, 240.3, 167.1, 245.3, 166.8);
+      ctx.closePath();
+      ctx.fill("evenodd");
+
+      // layer1/Path
+      ctx.beginPath();
+      ctx.moveTo(196.5, 172.0);
+      ctx.bezierCurveTo(198.8, 167.1, 203.9, 163.7, 209.7, 163.7);
+      ctx.bezierCurveTo(211.4, 163.7, 213.1, 164.0, 214.6, 164.5);
+      ctx.bezierCurveTo(215.7, 159.7, 220.0, 156.1, 225.1, 156.1);
+      ctx.bezierCurveTo(226.2, 156.1, 227.2, 156.3, 228.2, 156.6);
+      ctx.bezierCurveTo(231.6, 150.8, 237.8, 147.0, 245.0, 147.0);
+      ctx.bezierCurveTo(252.1, 147.0, 258.3, 150.8, 261.7, 156.5);
+      ctx.bezierCurveTo(264.2, 155.3, 267.0, 154.7, 270.0, 154.7);
+      ctx.bezierCurveTo(277.1, 154.7, 283.3, 158.5, 286.7, 164.1);
+      ctx.bezierCurveTo(287.8, 163.6, 289.0, 163.3, 290.3, 163.3);
+      ctx.bezierCurveTo(294.7, 163.3, 298.2, 166.8, 298.2, 171.2);
+      ctx.bezierCurveTo(298.2, 171.9, 298.1, 172.6, 297.9, 173.3);
+      ctx.bezierCurveTo(298.3, 173.2, 298.7, 173.2, 299.2, 173.2);
+      ctx.bezierCurveTo(305.3, 173.2, 310.3, 178.2, 310.3, 184.3);
+      ctx.bezierCurveTo(310.3, 190.5, 305.3, 195.5, 299.2, 195.5);
+      ctx.bezierCurveTo(297.3, 195.5, 295.5, 195.0, 294.0, 194.2);
+      ctx.bezierCurveTo(291.4, 201.9, 284.1, 207.4, 275.6, 207.4);
+      ctx.bezierCurveTo(271.7, 207.4, 268.2, 206.3, 265.1, 204.3);
+      ctx.bezierCurveTo(261.6, 208.5, 256.3, 211.1, 250.4, 211.1);
+      ctx.bezierCurveTo(242.3, 211.1, 235.3, 206.1, 232.4, 199.1);
+      ctx.bezierCurveTo(230.5, 201.9, 227.2, 203.8, 223.5, 203.8);
+      ctx.bezierCurveTo(217.6, 203.8, 212.8, 199.0, 212.8, 193.1);
+      ctx.bezierCurveTo(212.8, 193.0, 212.8, 192.9, 212.8, 192.8);
+      ctx.bezierCurveTo(211.8, 193.0, 210.8, 193.1, 209.7, 193.1);
+      ctx.bezierCurveTo(205.2, 193.1, 201.1, 191.0, 198.4, 187.8);
+      ctx.bezierCurveTo(198.0, 187.9, 197.5, 187.9, 197.0, 187.9);
+      ctx.bezierCurveTo(192.6, 187.9, 189.1, 184.4, 189.1, 180.0);
+      ctx.bezierCurveTo(189.1, 175.8, 192.3, 172.3, 196.5, 172.0);
+      ctx.closePath();
+      ctx.fill("evenodd");
+
+      // layer1/Path
+      ctx.globalAlpha = alpha * 1.00;
+      ctx.beginPath();
+      ctx.moveTo(959.0, 560.0);
+      ctx.lineTo(167.0, 560.0);
+      ctx.lineTo(167.0, 145.0);
+      ctx.lineTo(959.0, 145.0);
+      ctx.lineTo(959.0, 560.0);
+      ctx.closePath();
+      ctx.restore();
+    }
+  </script>
+ </head>
+ <body onload="init()">
+   <canvas id="canvas" width="1024" height="768"></canvas>
+ </body>
+</html>
