@@ -3,27 +3,8 @@ body{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-div#game-con.game-con {
- background: linear-gradient(to bottom, #262261, #652C90);
- height: 70%;
- }
-
-.cloud {
-    position: absolute;
-    z-index: -1;
-}
-
-div#cloud-1.cloud.pull-right {
-	position: absolute;
-	box-sizing: border-box;
-	height: 25%;
-}
-
-div#cloud-2 {
-	height: 375px;
-	box-sizing: border-box;
-}
-
-div#cloud-3 {
-	height: 30px;	
-}
+#gamecontainer {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+} 

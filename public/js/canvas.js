@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-
-<!-- Created with Ai->Canvas Export Plug-In Version 1.2 (Mac)   -->
-<!-- By Mike Swanson (http://blog.mikeswanson.com/)             -->
-
-<html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <title>Untitled-1</title>
-  <script src="Ai2CanvasAnimation.js"></script>
-  <script>
-
-    // Main canvas and context references
+// Main canvas and context references
     var canvas;
     var ctx;
 
@@ -795,9 +783,3 @@
       ctx.restore();
       ctx.restore();
     }
-  </script>
- </head>
- <body onload="init()">
-   <canvas id="canvas" width="1024" height="768"></canvas>
- </body>
-</html>

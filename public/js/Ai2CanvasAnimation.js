@@ -698,3 +698,4 @@ function clockTick(t) {
   var steps = 60.0;
   return Math.floor(t * steps) / steps;
 }
+
